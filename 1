@@ -1,0 +1,113 @@
+import UIKit
+
+var cat = "😸"
+print(cat)
+
+var bill = 200.0
+var typ = 0.15
+var sum = bill * typ + bill
+print(sum)
+
+var i=100
+while (i>0)
+{   print(i)
+    i-=2
+}
+print(2%2)
+var total = 0;
+var x = 10
+while x>0 {
+    total+=x;
+    x-=1
+}
+print(total)
+var total1 = 1
+var k = 10
+while k>1 {
+    total1*=k;
+    k-=1
+}
+print(total1)
+
+func sum(x:Int,y:Int){
+    print(x+y)
+    
+}
+sum(x: 5, y: 100)
+
+func square(x:Int)->Int{
+    
+    return x*x
+}
+print(square(x: 10))
+
+var arr = [4,5,200,50,4340,344,44,23]
+func bigest(){
+var bigestNum=0
+for i in 0..<arr.count{
+    if (bigestNum<arr[i]){
+    bigestNum=arr[i];
+    }
+}
+print(bigestNum)
+}
+
+bigest()
+    
+
+func small(_ arr : [Int])->Int {
+    var temp = arr[0]
+    
+    for i in arr{
+        if i<temp
+        {
+            temp = i
+        }
+    }
+    return temp
+
+}
+print(small(arr))
+
+var c = 0
+var v = 1
+for a in 1...4{
+    if (a<3){
+        v = v*a
+    }
+    else{
+        c = c+4
+    }
+}
+print(c,",",v)
+
+
+
+
+func printCards(kindOfSahpe : String){
+    var arr1 : [String] = [];
+        for a in 1...13{
+            arr1.append("\(a),\(kindOfSahpe)")
+            if a == 11 {
+                arr1[a-1] = "j,\(kindOfSahpe)"
+            }
+            if a == 12 {
+                arr1[a-1] = "q,\(kindOfSahpe)"
+            }
+            if a == 13 {
+                arr1[a-1] = "k,\(kindOfSahpe)"
+            }
+            
+            print(arr1[a-1])
+        }
+}
+printCards(kindOfSahpe: "♠️")
+printCards(kindOfSahpe: "♣️")
+printCards(kindOfSahpe: "♥️")
+printCards(kindOfSahpe: "♦️")
+
+
+
+
+
+
